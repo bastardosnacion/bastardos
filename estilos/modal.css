@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Creepster&display=swap');
+
+.modal{
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .8);
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    
+    animation: modal 2s 2s forwards;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal__titulo{
+    font-family: 'Caveat Brush', cursive;
+    font-size: 60px;
+    font-weight: normal;
+
+    margin-bottom: 30px;
+}
+
+.modal__texto{
+    font-family: 'Caveat Brush', cursive;
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+#cerrar{
+    display: none;
+}
+
+.cerrar__modal{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: darkred;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 40px;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    z-index: 1500;
+    cursor: pointer;
+
+    animation: modal 2s 2s forwards;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#cerrar:checked + .cerrar__modal, #cerrar:checked ~ .modal{
+    display: none;
+}
+
+@keyframes modal{
+    100%{
+        visibility: visible;
+        opacity: 1;
+    }
+}
