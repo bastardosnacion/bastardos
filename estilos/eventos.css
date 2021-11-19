@@ -11,14 +11,14 @@
 .wave{
     width: 100%;
     position: relative;
-    top: 40px;
+    top: 5px;
     z-index: -10;
 }
 
 .wave-bottom{
     transform: scaleY(-1);
     position: relative;
-    top: -40px;
+    top: -5px;
     z-index: -10;
 }
 
@@ -73,8 +73,15 @@
 }
 
 @media (min-width: 768px) {
-    .evento{
+    .eventos{
         padding: 0px;
+        margin: 0 center;
+        width: 100%;
+    }
+    .evento{
+        padding: 25px;
+        max-width: 460px;
+        margin: 0 auto;
     }
 
     .eventos__titulo{
@@ -108,11 +115,6 @@
         margin-top: 10px;
     }
     
-    .evento{
-        padding: 25px;
-        max-width: 500px;
-        margin: 0 auto;
-    }
     
     .evento__img-cont{
         width: 300px;
@@ -139,7 +141,7 @@
 
     .evento-2 .evento__img-cont{
         background-color: blue;
-        margin-left: 150px;
+        margin-left: 110px;
         
     }
 
