@@ -15,6 +15,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Montserrat', sans-serif;
     background-color: var(--theme-color);
@@ -43,4 +47,8 @@ ul{
     width: 70%;
     margin: 45px auto;
     background:linear-gradient(to right, red, black, red);
+}
+
+section [id]{
+    scroll-margin-top: 95px;
 }

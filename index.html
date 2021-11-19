@@ -1,165 +1,185 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
 
-    <!--Fuentes-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"/>
-    <!-- Fin Fuentes-->
+<head>
 
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!--Iconos-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-    <link href="https://file.myfontastic.com/avEiViZgyTsPbVfr2ozm59/icons.css" rel="stylesheet">
-    <!--Fin Iconos-->
-    
-    <!--Estilos-->
-    <link rel="stylesheet" href="estilos/navbar.css" />
-    <link rel="stylesheet" href="estilos/main.css" />
-    <link rel="stylesheet" href="estilos/nosotros.css" />
-    <link rel="stylesheet" href="estilos/galeria.css" />
-    <link rel="stylesheet" href="estilos/modal.css" />
-    <link rel="stylesheet" href="estilos/eventos.css" />
-    <!--Fin Estilos-->
+  <!--Fuentes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Open+Sans:wght@300;400;700&display=swap"
+    rel="stylesheet" />
+  <!-- Fin Fuentes-->
 
-    <link rel="icon" href="img/favicon.ico" />
-    <title>Bastardos MC</title>
-    <script defer src="js/menu.js"></script>
-  </head>
-  <body>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <input type="checkbox" id="cerrar">
-    <label class="cerrar__modal" for="cerrar" id="btn-cerrar">X</label>
-    <div class="modal">
-      <div class="modal__contenido">
-        <h2 class="modal__titulo">¡¡¡ANIVERSARIO!!!</h2>
-        <img src="img/bastardos.png" alt="">
-        <p class="modal__texto">¡MUY PRONTO! <br> ESPERALO...</p>
-      </div>
-    </div> 
-   
+  <!--Iconos-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <link href="https://file.myfontastic.com/avEiViZgyTsPbVfr2ozm59/icons.css" rel="stylesheet">
+  <!--Fin Iconos-->
 
-    <header class="topheader">
-      <nav class="topnav">
-        <a href="#" class="logo">
-          <img
-            class="logo__img"
-            width="70"
-            height="80"
-            src="img/bastardos.png"
-            alt="Bastardos MC"
-            title="Bastardos Nación MC"
-          />
-          <div class="topnav__text">
-            BASTARDOS NACIÓN </br> MC
-          </div>
-        </a>
-        
-        <button class="open-menu" aria-label="Abrir menú">
-          <i class="fas fa-bars"></i>
+  <!--Estilos-->
+  <link rel="stylesheet" href="estilos/navbar.css" />
+  <link rel="stylesheet" href="estilos/main.css" />
+  <link rel="stylesheet" href="estilos/nosotros.css" />
+  <link rel="stylesheet" href="estilos/galeria.css" />
+  <link rel="stylesheet" href="estilos/modal.css" />
+  <link rel="stylesheet" href="estilos/eventos.css" />
+  <link rel="stylesheet" href="estilos/footer.css" />
+  <!--Fin Estilos-->
+
+  <link rel="icon" href="img/favicon.ico" />
+  <title>Bastardos MC</title>
+  <script defer src="js/menu.js"></script>
+</head>
+
+<body>
+
+  <!--<input type="checkbox" id="cerrar">
+  <label class="cerrar__modal" for="cerrar" id="btn-cerrar">X</label>
+  <div class="modal">
+    <div class="modal__contenido">
+      <h2 class="modal__titulo">¡¡¡ANIVERSARIO!!!</h2>
+      <img src="img/bastardos.png" alt="">
+      <p class="modal__texto">¡MUY PRONTO! <br> ESPERALO...</p>
+    </div>
+  </div>-->
+
+
+  <header class="topheader">
+    <nav class="topnav">
+      <a href="#" class="logo">
+        <img class="logo__img" width="70" height="80" src="img/bastardos.png" alt="Bastardos MC"
+          title="Bastardos Nación MC" />
+        <div class="topnav__text">
+          BASTARDOS NACIÓN </br> MC
+        </div>
+      </a>
+
+      <button class="open-menu" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <ul class="menu">
+        <button class="close-menu" aria-label="Cerrar menú">
+          <i class="fa-solid fa-xmark"></i>
         </button>
+        <li class="menu__item"><a href="#" class="menu__link">Inicio</a></li>
+        <li class="menu__item"><a href="#gallery" class="menu__link">Galería</a></li>
+        <li class="menu__item"><a href="#events" class="menu__link">Eventos</a></li>
+        <li class="menu__item"><a href="#contact" class="menu__link">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <ul class="menu">
-          <button class="close-menu" aria-label="Cerrar menú">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
-          <li class="menu__item"><a href="#" class="menu__link">Inicio</a></li>
-          <li class="menu__item"><a href="#gallery" class="menu__link">Galería</a></li>
-          <li class="menu__item"><a href="#events" class="menu__link">Eventos</a></li>
-          <li class="menu__item"><a href="#contact" class="menu__link">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-    
-    <main class="main"> 
-      <section class="nosotros" >
-        <div class="nosotros__info">
-          <h1 class="nosotros__titulo">BASTARDOS NACIÓN <br /> MC</h1>
-          <p class="nosotros__texto">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio dolor mollitia, perspiciatis facilis qui deleniti itaque repellendus aut aliquam voluptatum similique veritatis. Nemo accusamus perspiciatis voluptas itaque voluptates unde maxime ullam vel amet reiciendis! Accusamus illum animi inventore incidunt voluptate eum quis sapiente veritatis quia explicabo, minus voluptas. Obcaecati, harum?
-          </p>
+  <main class="main">
+    <section class="nosotros">
+      <div class="nosotros__info">
+        <h1 class="nosotros__titulo">BASTARDOS NACIÓN <br /> MC</h1>
+        <p class="nosotros__texto">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio dolor mollitia, perspiciatis facilis qui
+          deleniti itaque repellendus aut aliquam voluptatum similique veritatis. Nemo accusamus perspiciatis voluptas
+          itaque voluptates unde maxime ullam vel amet reiciendis! Accusamus illum animi inventore incidunt voluptate
+          eum quis sapiente veritatis quia explicabo, minus voluptas. Obcaecati, harum?
+        </p>
+      </div>
+      <div class="nosotros___img-cont">
+        <img src="img/banner_rj.jpg" alt="Bastardos Nación ROJA Y NEGRA" class="nosotros__img">
+      </div>
+    </section>
+
+    <hr class="division" />
+
+    <section class="gallery">
+      <h2 class="gallery__tittle" id="gallery">
+        Galería Bastardos
+      </h2>
+      <div class="gallery__container">
+        <div class="gallery__img-cont">
+          <img src="img/bastardos/bastardos_010.jpg" alt="" class="gallery__item">
         </div>
-        <div class="nosotros___img-cont" >
-          <img src="img/banner_rj.jpg" alt="Bastardos Nación ROJA Y NEGRA" class="nosotros__img">
+        <div class="gallery__img-cont">
+          <img src="img/bastardos/bastardos_020.jpg" alt="" class="gallery__item">
         </div>
-      </section>
-
-      <hr class="division" />
-
-      <section class="gallery">
-        <h2 class="gallery__tittle" id="gallery">
-          Galería Bastardos
-        </h2>
-        <div class="gallery__container">       
-          <div class="gallery__img-cont" >
-            <img src="img/bastardos/bastardos_010.jpg" alt="" class="gallery__item">
-          </div>
-          <div class="gallery__img-cont" >
-            <img src="img/bastardos/bastardos_020.jpg" alt="" class="gallery__item">
-          </div>
-          <div class="gallery__img-cont" >
-            <img src="img/bastardos/bastardos_028.jpg" alt="" class="gallery__item">
-          </div>
-          <div class="gallery__img-cont" >
-            <img src="img/bastardos/bastardos_002.jpeg" alt="" class="gallery__item">
-          </div>
-          <div class="gallery__img-cont" >
-            <img src="img/bastardos/bastardos_013.jpg" alt="" class="gallery__item">
-          </div>
-          <div class="gallery__img-cont" >
-            <img src="img/bastardos/bastardos_001.jpeg" alt="" class="gallery__item">
-          </div>
+        <div class="gallery__img-cont">
+          <img src="img/bastardos/bastardos_028.jpg" alt="" class="gallery__item">
+        </div>
+        <div class="gallery__img-cont">
+          <img src="img/bastardos/bastardos_002.jpeg" alt="" class="gallery__item">
+        </div>
+        <div class="gallery__img-cont">
+          <img src="img/bastardos/bastardos_013.jpg" alt="" class="gallery__item">
+        </div>
+        <div class="gallery__img-cont">
+          <img src="img/bastardos/bastardos_001.jpeg" alt="" class="gallery__item">
+        </div>
       </div>
       <a href="#" class="gallery__btn">Ver más...</a>
-      </section>
+    </section>
 
-      <section class="eventos" id="events">
-        <img src="img/wave.svg" alt="división" class="wave">
-        <div class="eventos__contenedor">
-          <h2 class="eventos__titulo">Eventos biker</h2>
-          
-          <div class="eventos__grid">
+    <section class="eventos" >
+      <img src="img/wave.svg" alt="división" class="wave">
+      <div class="eventos__contenedor">
+        <h2 class="eventos__titulo" id="events">Eventos biker</h2>
 
-            <div class="empty"></div>
-            <div class="line"></div>
-            <div class="evento evento-1">
-              <div class="evento__fecha"> 20 / 11 / 2021</div>
-              <div class="evento__mc">Orbis Septem Inferni</div>
-              <div class="evento__descripcion"> 6to Aiversario</div>
-              <div class="evento__direccion">Lugar del Evento: Calle Aquiles Serdan #19 Col. Ampliación los Reyes la Paz.</div>
-              <div class="evento__img-cont"><img src="img/evento_001.jpeg" alt="Evento Orbis" class="evento__img"></div>
+        <div class="eventos__grid">
+
+          <div class="empty"></div>
+          <div class="line"></div>
+          <div class="evento evento-1">
+            <div class="evento__fecha"> 20 / 11 / 2021</div>
+            <div class="evento__mc">Orbis Septem Inferni</div>
+            <div class="evento__descripcion"> 6to Aiversario</div>
+            <div class="evento__direccion">Lugar del Evento: Calle Aquiles Serdan #19 Col. Ampliación los Reyes la Paz.
             </div>
+            <div class="evento__img-cont"><img src="img/evento_001.jpeg" alt="Evento Orbis" class="evento__img"></div>
+          </div>
 
-            
-            <div class="evento evento-2">
-              <div class="evento__fecha"> 04 / 12 / 2021</div>
-              <div class="evento__mc">Soul Hunter</div>
-              <div class="evento__descripcion"> 3er Aiversario</div>
-              <div class="evento__direccion">Punto de reunión: Coyote Cd. Neza 4:00pm para dirigirnos a la zona Biker</div>
-              <div class="evento__img-cont"><img src="img/evento_002.jpeg" alt="Evento Soul Hunter" class="evento__img img-002"></div>
-            </div>
 
-            <div class="line"></div>
-            <div class="empty"></div>
-            <div class="empty"></div>
-            <div class="line"></div>
-            
-            <div class="evento evento-3">
-              <div class="evento__fecha"> 05 / 03 / 2022</div>
-              <div class="evento__mc">Bastardos Nación MC</div>
-              <div class="evento__descripcion"> 2do aniversario y enchalecamiento oficial</div>
-              <div class="evento__direccion">Lugar del Evento: Próximamente (Estén atentos) </div>
-              <div class="evento__img-cont"><img src="img/evento_003.jpeg" alt="Evento Bastardos Nacion MC" class="evento__img "></div>
+          <div class="evento evento-2">
+            <div class="evento__fecha"> 04 / 12 / 2021</div>
+            <div class="evento__mc">Soul Hunter</div>
+            <div class="evento__descripcion"> 3er Aiversario</div>
+            <div class="evento__direccion">Punto de reunión: Coyote Cd. Neza 4:00pm para dirigirnos a la zona Biker
             </div>
+            <div class="evento__img-cont"><img src="img/evento_002.jpeg" alt="Evento Soul Hunter"
+                class="evento__img img-002"></div>
+          </div>
+
+          <div class="line"></div>
+          <div class="empty"></div>
+          <div class="empty"></div>
+          <div class="line"></div>
+
+          <div class="evento evento-3">
+            <div class="evento__fecha"> 05 / 03 / 2022</div>
+            <div class="evento__mc">Bastardos Nación MC</div>
+            <div class="evento__descripcion"> 2do aniversario y enchalecamiento oficial</div>
+            <div class="evento__direccion">Lugar del Evento: Próximamente (Estén atentos) </div>
+            <div class="evento__img-cont"><img src="img/evento_003.jpeg" alt="Evento Bastardos Nacion MC"
+                class="evento__img "></div>
           </div>
         </div>
-        <img src="img/wave.svg" alt="división" class="wave wave-bottom">
-      </section>
+      </div>
+      <img src="img/wave.svg" alt="división" class="wave wave-bottom">
+    </section>
+  </main>
 
-    </main>
-  </body>
+  <footer class="footer" id="contact">
+    <div class="footer__container">
+       <p class="footer ">
+         <a href="https://www.facebook.com/BastardosN" class="footer__link"><i class="fab fa-facebook-square"></i>facebook.com/BastardosN</a>
+       </p>
+      <p class="copy">
+        ©2021 Bastardos Nación MC | Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>
+</body>
+
 </html>
