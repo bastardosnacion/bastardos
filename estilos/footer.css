@@ -1,2 +1,46 @@
 /*--------------------Estilos del Footer--------------------*/
 
+.footer{
+    color: var(--primary-color);
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+.footer__container{
+    background-color: var(--secundary-color);
+}
+
+.footer__link{
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 20px;
+
+    width: 350px;
+    margin: 0 auto;
+}
+
+.footer__redes{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.footer__titulo{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.fab{
+    color: #3b5998;
+    font-size: 30px;
+
+    background-color: white;
+    padding: 2px 4px;
+    margin-right: 5px;
+}
+
+.copy{
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
