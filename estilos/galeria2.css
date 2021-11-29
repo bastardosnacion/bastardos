@@ -1,29 +1,36 @@
-.main__gallery{
-    background-color: black;
-    height: 500px;
-    margin: auto;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.construction{
-    color: white;
-    font-size: 30px;
-}
-
-.fa-helmet-safety,
-.fa-screwdriver-wrench{
-    font-size: 150px;
-    color: yellow;
-}
-
-.titulo{
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
+.gallery{
     text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    margin: 0 auto;
+
+}
+
+.gallery__titulo-txt{
+    line-height: 100px;
+    color: black;
+}
+
+.contenedor__galleria{
+    columns: 3 320px;
+    column-gap: .5em;
+    margin-bottom: .5em;
+}
+
+.gallery__img{
+    max-width: 100%;
+    margin-bottom: .5em;
+    border-radius: 10px;
+    display: block;
+
+    outline: 2px solid white;
+    outline-offset: -7px;
 }
